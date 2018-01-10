@@ -21,9 +21,9 @@ module.exports = (cfp = ConfigFilePath) => {
         })
       })
     })
-  .catch( e => {
-    return new Promise((resolve, reject) => {
-      reject(e)
+    .catch(e => {
+      return new Promise((resolve, reject) => {
+        reject(e)
+      })
     })
-  })
-} 
+}
