@@ -1,5 +1,5 @@
 # Why another config loarder?
-wy-env loads a configuration file from the root of your project `(config.json)`. <ENTER>
+wy-env loads a configuration file from the root of your project `(config.json)`, but if you want, send the path of your configuration file. <ENTER>
 
 Here whould be your env vars like PORT, DB_URI etc.
 In fact, you can use development, qa or production environment in the same file using json format. <ENTER>
@@ -18,7 +18,7 @@ const Server = Restify.createServer({
 })
 async function Start () {
   try {
-    await WyEnv()
+    await WyEnv() // optional, send the path of your config file as a string
     Server.listen(process.env.PORT, (e) => {
       console.log('server running')
     })
@@ -49,3 +49,5 @@ and it whould be your `config.json` file
 }
 
 ```
+NOTE
+You must follow the json example, if you can change the loaded section, only set the `process.env.NODE_ENV` with the name of your desired env, in our case should be 'development', 'qa' or 'production'
