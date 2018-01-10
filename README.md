@@ -50,4 +50,6 @@ and it whould be your `config.json` file
 
 ```
 NOTE
-You must follow the json example, if you can change the loaded section, only set the `process.env.NODE_ENV` with the name of your desired env, in our case should be 'development', 'qa' or 'production'
+You must follow the json example, if you can change the loaded section, 
+only set the `process.env.NODE_ENV` with the name of your desired env, 
+in our case should be 'development', 'qa' or 'production'
