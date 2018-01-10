@@ -1,5 +1,5 @@
 {
-  "name": "wy-env",
+  "name": "@wyracocha/wy-env",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -8,7 +8,25 @@
     "mocha": "^4.1.0"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha"
+    "test": "mocha"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "description": "wy-env loads a configuration file from the root of your project `(config.json)`, but if you want, send the path of your configuration file. <ENTER>",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wyracocha/wyenv.git"
+  },
+  "keywords": [
+    "env",
+    "environment",
+    "globals"
+  ],
+  "author": "Miguel Aliaga",
+  "bugs": {
+    "url": "https://github.com/wyracocha/wyenv/issues"
+  },
+  "homepage": "https://github.com/wyracocha/wyenv#readme"
 }

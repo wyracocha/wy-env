@@ -3,7 +3,7 @@ const Fs = require('fs')
 const Path = require('path')
 const {promisify} = require('util')
 const ReadFile = promisify(Fs.readFile)
-const ConfigFilePath = Path.join(__dirname, 'config.json')
+const ConfigFilePath = Path.join(Path.dirname(process.argv[1]), 'config.json')
 
 module.exports = (cfp = ConfigFilePath) => {
   return ReadFile(cfp)
